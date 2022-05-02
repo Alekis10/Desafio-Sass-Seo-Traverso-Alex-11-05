@@ -335,7 +335,7 @@ select {
     text-align: center;
     margin: 0 auto;
     width: 65%;
-}
+
 
 .sobremi__titulo {
     margin-top: 30px;
@@ -381,6 +381,8 @@ select {
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 1.5rem;
+}
+
 }
 
 .habilidades__lenguajes {
@@ -838,6 +840,17 @@ margin-top: 12px;
 
     /* SECCION SOBRE MI */
 
+    .sobremi {
+        text-align: center;
+        margin: 0 auto;
+        width: 65%;
+    
+    
+    .sobremi__titulo {
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+    
     .sobremi__imagen{
         height: auto;
         width: auto;
@@ -847,10 +860,31 @@ margin-top: 12px;
     
     .sobremi__texto {
         font-size: 1.1rem;
+        
+    }
+    
+    .sobremi__caracteristicas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-cualidades {
+        margin-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    
+    .card-img-top-cualidades {
+        margin: 0 auto;
+        width: 80px;
     }
     
     .card-text-cualidades {
         font-size: 1.2rem;
+    }    
+    
     }
 
     /* FORMULARIO */
@@ -1069,7 +1103,7 @@ margin-top: 12px;
         text-align: center;
         margin: 0 auto;
         width: 80%;
-    }
+    
     
     .sobremi__titulo {
         margin-top: 30px;
@@ -1090,17 +1124,18 @@ margin-top: 12px;
         font-size: 1rem;
         text-align: left;
     }
-    
+
     .sobremi__caracteristicas {
-        margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     
     .card-text-cualidades {
         font-size: 1.2rem;
+    }
+
     }
 
      /* SECCION HABILIDADES */
@@ -1370,7 +1405,7 @@ margin-top: 12px;
         text-align: center;
         margin: 0 auto;
         width: 80%;
-    }
+    
     
     .sobremi__titulo {
         margin-top: 30px;
@@ -1406,6 +1441,7 @@ margin-top: 12px;
     .card-cualidades {
         padding: 0;
     }
+}
     
     
     /* SECCION HABILIDADES */

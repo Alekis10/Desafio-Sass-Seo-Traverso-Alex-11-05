@@ -334,26 +334,22 @@ select {
   margin: 0 auto;
   width: 65%;
 }
-
-.sobremi__titulo {
+.sobremi .sobremi__titulo {
   margin-top: 30px;
   font-size: 2rem;
 }
-
-.sobremi__imagen {
+.sobremi .sobremi__imagen {
   height: 400px;
   width: 400px;
   margin-top: 20px;
 }
-
-.sobremi__texto {
+.sobremi .sobremi__texto {
   text-align: left;
   margin: 30px 0 30px 0;
   height: 200px;
   font-size: 1.2rem;
 }
-
-.sobremi__caracteristicas {
+.sobremi .sobremi__caracteristicas {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -363,19 +359,16 @@ select {
   height: 15rem;
   margin-bottom: 2.5rem;
 }
-
-.card-cualidades {
+.sobremi .card-cualidades {
   margin-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
-
-.card-img-top-cualidades {
+.sobremi .card-img-top-cualidades {
   margin: 0 auto;
   width: 80px;
 }
-
-.card-text-cualidades {
+.sobremi .card-text-cualidades {
   font-size: 1.3rem;
   font-weight: 600;
   margin-top: 1.5rem;
@@ -822,18 +815,40 @@ footer {
   }
 
   /* SECCION SOBRE MI */
-  .sobremi__imagen {
+  .sobremi {
+    text-align: center;
+    margin: 0 auto;
+    width: 65%;
+  }
+  .sobremi .sobremi__titulo {
+    margin-top: 30px;
+    font-size: 2rem;
+  }
+  .sobremi .sobremi__imagen {
     height: auto;
     width: auto;
     max-width: 100%;
     max-height: 100%;
   }
-
-  .sobremi__texto {
+  .sobremi .sobremi__texto {
     font-size: 1.1rem;
   }
-
-  .card-text-cualidades {
+  .sobremi .sobremi__caracteristicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+  }
+  .sobremi .card-cualidades {
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .sobremi .card-img-top-cualidades {
+    margin: 0 auto;
+    width: 80px;
+  }
+  .sobremi .card-text-cualidades {
     font-size: 1.2rem;
   }
 
@@ -1042,36 +1057,30 @@ footer {
     margin: 0 auto;
     width: 80%;
   }
-
-  .sobremi__titulo {
+  .sobremi .sobremi__titulo {
     margin-top: 30px;
     font-size: 2rem;
   }
-
-  .sobremi__imagen {
+  .sobremi .sobremi__imagen {
     height: auto;
     width: auto;
     max-width: 100%;
     max-height: 100%;
   }
-
-  .sobremi__texto {
+  .sobremi .sobremi__texto {
     margin: 0 auto;
     width: 90%;
     height: auto;
     font-size: 1rem;
     text-align: left;
   }
-
-  .sobremi__caracteristicas {
-    margin: auto;
+  .sobremi .sobremi__caracteristicas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 90%;
+    width: 100%;
     height: auto;
   }
-
-  .card-text-cualidades {
+  .sobremi .card-text-cualidades {
     font-size: 1.2rem;
   }
 
@@ -1329,39 +1338,33 @@ footer {
     margin: 0 auto;
     width: 80%;
   }
-
-  .sobremi__titulo {
+  .sobremi .sobremi__titulo {
     margin-top: 30px;
     font-size: 2rem;
   }
-
-  .sobremi__imagen {
+  .sobremi .sobremi__imagen {
     height: auto;
     width: auto;
     max-width: 100%;
     max-height: 100%;
   }
-
-  .sobremi__texto {
+  .sobremi .sobremi__texto {
     margin: 0 auto;
     width: 90%;
     height: auto;
     font-size: 1rem;
     text-align: left;
   }
-
-  .sobremi__caracteristicas {
+  .sobremi .sobremi__caracteristicas {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
     height: auto;
   }
-
-  .card-text-cualidades {
+  .sobremi .card-text-cualidades {
     font-size: 1.2rem;
   }
-
-  .card-cualidades {
+  .sobremi .card-cualidades {
     padding: 0;
   }
 
