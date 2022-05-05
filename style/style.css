@@ -329,6 +329,7 @@ textarea {
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 6px;
+  border: 1px solid #D11B35;
   margin: 20px;
   background: #D11B35;
   width: 30%;
