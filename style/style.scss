@@ -659,27 +659,13 @@ footer {
     width: 100%;
     height: 100px;
     text-align: center;
-}
 
-.wppfooter{
-width: 30px;
-height: 30px;
-}
-.igfooter{
-width: 30px;
-height: 30px;
-}
-.lkfooter{
-width: 30px;
-height: 30px;
-}
-.githubfooter{
-width: 30px;
-height: 30px;
-}
+    .icono__footer {
+        width: 30px;
+        height: 30px;
+        margin-top: .6rem;
+    }
 
-.imagenesfooter{
-margin-top: 12px;
 }
 
 @media only screen and (max-width: 1400px) {

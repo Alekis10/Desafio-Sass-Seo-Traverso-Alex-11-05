@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #fff;
   background-color: #1E2020;
 }
@@ -33,7 +34,8 @@ body {
 .nav-link {
   color: #fff !important;
   padding: 15px;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   width: auto !important;
 }
 
@@ -50,21 +52,30 @@ body {
 }
 
 .nav-link:hover {
-  transform: scale(1.2);
-  transition-duration: 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   color: #D11B35 !important;
 }
 
 #main-header {
+  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
   width: 100%;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
-  animation: 2s aparicion 1;
-  transform-origin: top;
+  -webkit-animation: 2s aparicion 1;
+          animation: 2s aparicion 1;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 a {
@@ -81,18 +92,34 @@ a {
   height: calc(100vh - 100px);
   width: auto;
   background-size: cover;
-  animation: 2s aparicion 1;
-  transform-origin: top;
+  -webkit-animation: 2s aparicion 1;
+          animation: 2s aparicion 1;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-left: 8rem;
   margin-top: 20vh;
   width: 600px;
   color: #fff;
   font-size: 3rem;
+}
+
+@-webkit-keyframes aparicion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 @keyframes aparicion {
@@ -103,6 +130,7 @@ a {
     opacity: 0.8;
   }
 }
+
 .texto__inicio {
   text-align: left;
 }
@@ -113,7 +141,8 @@ a {
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 40%;
 }
 
@@ -127,11 +156,13 @@ a {
   letter-spacing: 2px;
   padding: 10px;
   height: auto;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .botoncontactame:hover {
   font-size: 1.8rem;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-weight: 700;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
@@ -143,7 +174,8 @@ a {
 .banner__imagen {
   height: calc(100vh - 100px);
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .proyectos__cajaindex {
@@ -159,8 +191,11 @@ a {
 }
 
 .contenedor__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card {
@@ -195,22 +230,28 @@ a {
   background-color: #D11B35 !important;
   letter-spacing: 2px;
   padding: 10px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   font-weight: 700;
   color: #fff;
 }
 
 .card-img-top {
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .card-img-top:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -230,11 +271,11 @@ a {
 }
 
 input {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .formulario__titulo {
@@ -334,40 +375,56 @@ select {
   margin: 0 auto;
   width: 65%;
 }
+
 .sobremi .sobremi__titulo {
   margin-top: 30px;
   font-size: 2rem;
 }
+
 .sobremi .sobremi__imagen {
   height: 400px;
   width: 400px;
   margin-top: 20px;
 }
+
 .sobremi .sobremi__texto {
   text-align: left;
   margin: 30px 0 30px 0;
   height: 200px;
   font-size: 1.2rem;
 }
+
 .sobremi .sobremi__caracteristicas {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 15rem;
   margin-bottom: 2.5rem;
 }
+
 .sobremi .card-cualidades {
   margin-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
 .sobremi .card-img-top-cualidades {
   margin: 0 auto;
   width: 80px;
 }
+
 .sobremi .card-text-cualidades {
   font-size: 1.3rem;
   font-weight: 600;
@@ -393,22 +450,38 @@ select {
 
 .lenguajes__contenedor {
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .titulo__leng {
   font-size: 1.3rem;
   font-weight: 600;
-  margin: 0.8rem;
+  margin: .8rem;
 }
 
 .barra__caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
   margin: 20px auto;
   width: 50%;
@@ -416,12 +489,16 @@ select {
 }
 
 .barra__fondo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  border: 2px solid rgba(0, 0, 0, 0.3137254902);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #00000050;
   border-radius: 8px;
   outline: #D11B35 2px solid;
-  background-color: rgba(0, 0, 0, 0.3137254902);
+  background-color: #00000050;
   width: 90%;
   height: 30px;
 }
@@ -460,11 +537,17 @@ select {
 }
 
 .barra__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1.2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   font-weight: 600;
   background-color: #D11B35;
   height: 100%;
@@ -491,8 +574,10 @@ select {
 }
 
 .caja__tarjetas {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   border-radius: 15px;
   text-align: center;
   margin: 0 auto;
@@ -533,8 +618,13 @@ select {
 
 .proyectos__contenedor {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 10px auto;
   width: 95%;
   height: auto;
@@ -548,19 +638,28 @@ select {
   border-radius: 10px !important;
   border: 2px solid #D11B35;
   background-color: #141414;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .contenedor__imagen__trabajo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 360px;
 }
 
 .contenedor__imagen__trabajo__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 360px;
 }
@@ -592,7 +691,8 @@ select {
 .w-100 {
   width: 90% !important;
   height: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 15px;
 }
 
@@ -601,15 +701,20 @@ select {
 }
 
 .bajada__proyecto {
-  margin-top: 0.5rem;
+  margin-top: .5rem;
   height: auto;
 }
 
 .titulo__proyecto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  align-content: center;
-  justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 600;
   position: absolute;
   font-size: 1.7rem;
@@ -619,7 +724,8 @@ select {
 .w-100-2 {
   width: 90% !important;
   height: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 40px;
 }
 
@@ -650,28 +756,10 @@ footer {
   text-align: center;
 }
 
-.wppfooter {
+footer .icono__footer {
   width: 30px;
   height: 30px;
-}
-
-.igfooter {
-  width: 30px;
-  height: 30px;
-}
-
-.lkfooter {
-  width: 30px;
-  height: 30px;
-}
-
-.githubfooter {
-  width: 30px;
-  height: 30px;
-}
-
-.imagenesfooter {
-  margin-top: 12px;
+  margin-top: .6rem;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -679,49 +767,41 @@ footer {
   .card-body {
     height: auto;
   }
-
   .btn {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
   }
-
   .card-img {
     height: 320px;
   }
-
   .card {
     width: 45%;
   }
 }
+
 @media only screen and (max-width: 1200px) {
   /* SECCION INDEX */
   .card-body {
     height: auto;
   }
-
   .btn {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
   }
-
   .card-img {
     height: 250px;
   }
-
   .card {
     width: 45%;
   }
-
   /* FORMULARIO */
   .formulario {
     width: 50%;
   }
-
   /* SECCION PROYECTOS */
   .contenedor__trabajo {
     height: auto;
   }
-
   .bajada__proyecto {
     margin-top: 3.5rem;
     padding-right: 25px;
@@ -729,7 +809,6 @@ footer {
     font-size: 1rem;
     text-align: left;
   }
-
   .bajada__proyecto__left {
     margin-top: 3.5rem;
     padding-left: 22px;
@@ -737,83 +816,72 @@ footer {
     font-size: 1rem;
     text-align: left;
   }
-
   .trabajo_2 {
     background-size: cover;
     height: 370px;
     margin-top: 3rem;
   }
-
   .trabajo_3 {
     height: 380px;
     margin-top: 4rem;
   }
-
   /* SECCION HABILIDADES */
   .barra__caja {
     width: 70%;
   }
-
   .barra__fondo {
-    background-color: rgba(0, 0, 0, 0.3137254902);
+    background-color: #00000050;
     width: 80%;
     height: 25px;
   }
-
   .barra__contenido {
     height: 23px;
   }
-
   .caja__tarjetas {
     width: 80%;
     height: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-
   .caja__individual {
     margin: 25px auto;
     padding-bottom: 1rem;
     width: 80%;
     height: auto;
   }
-
   /* SECCION SOBRE MI */
   .sobremi__texto {
     height: auto;
     font-size: 1.1rem;
   }
-
   .card-cualidades {
     margin-top: 2.5rem;
     padding: 3rem;
   }
-
   .card-img-top-cualidades {
     margin: 0 auto;
     width: 80px;
   }
-
   .card-text-cualidades {
     font-size: 1.3rem;
     font-weight: 600;
     margin-top: 1.5rem;
   }
-
   .sobremi__caracteristicas {
     margin-bottom: 6rem;
   }
 }
+
 @media only screen and (max-width: 992px) {
   /* SECCION INDEX */
   .card {
     width: 85%;
   }
-
   .card-img {
     height: auto;
   }
-
   /* SECCION SOBRE MI */
   .sobremi {
     text-align: center;
@@ -834,8 +902,10 @@ footer {
     font-size: 1.1rem;
   }
   .sobremi .sobremi__caracteristicas {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     width: 100%;
     height: auto;
   }
@@ -851,75 +921,72 @@ footer {
   .sobremi .card-text-cualidades {
     font-size: 1.2rem;
   }
-
   /* FORMULARIO */
   .formulario {
     width: 70%;
   }
-
   .contenedor__trabajo {
     width: 90%;
     height: auto;
   }
-
   .contenedor__imagen__trabajo {
     width: 100%;
     height: 360px;
   }
-
   .contenedor__imagen__trabajo__left {
     width: 100%;
     height: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    order: -1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
-
   .w-100 {
     width: 85% !important;
     height: 90%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-left: 15px;
     margin: auto;
   }
-
   .titulo__proyecto {
     position: relative;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     width: 100%;
   }
-
   .w-100-2 {
     width: 85% !important;
     height: 90%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: auto;
   }
-
   .trabajo_1 {
     background-position: 100%;
     background-size: cover;
   }
-
   .trabajo_2 {
     background-position: 50% 100%;
     background-size: 100%;
     background-size: cover;
   }
-
   .trabajo_3 {
     background-position: 50% 20%;
     background-size: 100%;
     background-size: cover;
   }
-
   .trabajo_4 {
     background-position: 50% 40%;
     background-size: 100%;
     background-size: cover;
   }
-
   .bajada__proyecto {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem !important;
@@ -929,7 +996,6 @@ footer {
     font-size: 1.1rem;
     text-align: left;
   }
-
   .bajada__proyecto__left {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem !important;
@@ -939,37 +1005,39 @@ footer {
     font-size: 1.1rem;
     text-align: left;
   }
-
   .proyectos__contenedor {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 100%;
   }
-
   /* SECCION HABILIDADES */
   .barra__caja {
     width: 80%;
   }
-
   .barra__fondo {
-    background-color: rgba(0, 0, 0, 0.3137254902);
+    background-color: #00000050;
     width: 90%;
     height: 25px;
   }
-
   .barra__contenido {
     height: 23px;
   }
-
   .caja__tarjetas {
     width: 80%;
     height: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-
   .caja__individual {
     margin: 25px auto;
     padding-bottom: 1rem;
@@ -977,47 +1045,46 @@ footer {
     height: auto;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .logo {
     margin-top: 1.5rem;
     width: 45px;
   }
-
   .navbar-nav {
     margin-left: 15px !important;
   }
-
   .nav-link {
     color: #fff !important;
     width: 25%;
-    margin-top: 0.5rem;
-    padding: 0.5rem;
+    margin-top: .5rem;
+    padding: .5rem;
   }
-
   /* SECCION INDEX */
   .card {
     width: 85%;
   }
-
   .card-img {
     height: auto;
   }
-
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: auto;
     margin-top: 20vh;
     width: 600px;
     color: #fff;
     font-size: 2.5rem;
   }
-
   .texto__inicio {
     text-align: center;
     width: 100%;
   }
-
   .texto__saludo {
     width: 70%;
     font-weight: 400;
@@ -1025,32 +1092,28 @@ footer {
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
-
   .proyectos__contenedorgrid {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-
   .formulario {
     width: 80%;
   }
-
   .botoncontactame {
     margin-top: 70px;
     top: 55%;
   }
-
   /* SECCION PROYECTOS */
   .contenedor__trabajo {
     width: 75%;
     height: auto;
   }
-
   .titulo__proyecto {
     font-size: 1.7rem;
   }
-
   /* SECCION SOBRE MI */
   .sobremi {
     text-align: center;
@@ -1075,135 +1138,139 @@ footer {
     text-align: left;
   }
   .sobremi .sobremi__caracteristicas {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     width: 100%;
     height: auto;
   }
   .sobremi .card-text-cualidades {
     font-size: 1.2rem;
   }
-
   /* SECCION HABILIDADES */
   .barra__caja {
     width: 80%;
   }
-
   .barra__fondo {
-    background-color: rgba(0, 0, 0, 0.3137254902);
+    background-color: #00000050;
     width: 90%;
     height: 25px;
   }
-
   .barra__contenido {
     justify-items: center;
     height: 25px;
     background-color: #D11B35;
   }
-
   .barra__num {
     font-size: 1.1rem;
   }
-
   .programas__titulo {
     text-align: center;
     font-size: 2rem;
   }
-
   .habilidades__programas {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .caja__tarjetas {
     width: 80%;
     height: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-
   .caja__individual {
     margin: 25px auto;
     padding-bottom: 1rem;
     width: 80%;
     height: auto;
   }
-
   .titulo__programa {
     font-size: 1.2rem;
     height: auto;
   }
-
   .bajada__programa {
     font-size: 1.1rem;
     height: auto;
   }
-
   .programa__logo {
     height: 70px;
   }
-
   /* SECCION CONTACTO */
   .textocontacto {
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .textocontacto__parrafo {
     height: auto;
     font-size: 1.1rem;
   }
 }
+
 @media only screen and (max-width: 576px) {
   .logo {
     margin-top: 1.5rem;
     width: 40px;
   }
-
   .navbar-nav {
     margin-left: 15px !important;
   }
-
   .nav-link {
     color: #fff !important;
     width: 25%;
-    margin-top: 0.5rem;
-    padding: 0.5rem;
+    margin-top: .5rem;
+    padding: .5rem;
   }
-
   /* SECCION INDEX */
   .card {
     width: 85%;
   }
-
   .card-img {
     height: auto;
   }
-
   .card-body {
     height: auto;
     margin-bottom: 10px;
   }
-
   .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-left: auto;
     margin-top: 20vh;
     width: 600px;
     color: #fff;
     font-size: 2.5rem;
   }
-
   .texto__inicio {
     text-align: center;
     width: 100%;
   }
-
   .texto__saludo {
     width: 70%;
     font-weight: 400;
@@ -1211,86 +1278,83 @@ footer {
     position: absolute;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
-
   .proyectos__contenedorgrid {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-
   .formulario {
     width: 90%;
   }
-
   .botoncontactame {
     margin-top: 70px;
     top: 55%;
   }
-
   /* SECCION PROYECTOS */
   .contenedor__trabajo {
     width: 90%;
     height: auto;
   }
-
   .contenedor__imagen__trabajo {
     width: 100%;
     height: 360px;
   }
-
   .contenedor__imagen__trabajo__left {
     width: 100%;
     height: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    order: -1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
-
   .w-100 {
     width: 85% !important;
     height: 90%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin-left: 15px;
     margin: auto;
   }
-
   .titulo__proyecto {
     position: relative;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     width: 100%;
   }
-
   .w-100-2 {
     width: 85% !important;
     height: 90%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: auto;
   }
-
   .trabajo_1 {
     background-position: 100%;
     background-size: cover;
   }
-
   .trabajo_2 {
     background-position: 50% 100%;
     background-size: 100%;
     background-size: cover;
   }
-
   .trabajo_3 {
     background-position: 50% 20%;
     background-size: 100%;
     background-size: cover;
   }
-
   .trabajo_4 {
     background-position: 50% 40%;
     background-size: 100%;
     background-size: cover;
   }
-
   .bajada__proyecto {
     margin-top: 2.5rem;
     margin-bottom: 1.5rem !important;
@@ -1300,7 +1364,6 @@ footer {
     font-size: 1.1rem;
     text-align: left;
   }
-
   .bajada__proyecto__left {
     margin-top: 2.5rem;
     padding: 0;
@@ -1309,29 +1372,40 @@ footer {
     font-size: 1.1rem;
     text-align: left;
   }
-
   .proyectos__contenedor {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 100%;
   }
-
   /* SECCION CONTACTO */
   .textocontacto {
     width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-
   .textocontacto__parrafo {
     height: auto;
     font-size: 1.1rem;
   }
-
   /* SECCION SOBRE MI */
   .sobremi {
     text-align: center;
@@ -1356,8 +1430,10 @@ footer {
     text-align: left;
   }
   .sobremi .sobremi__caracteristicas {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     width: 100%;
     height: auto;
   }
@@ -1367,67 +1443,63 @@ footer {
   .sobremi .card-cualidades {
     padding: 0;
   }
-
   /* SECCION HABILIDADES */
   .barra__caja {
     width: 80%;
   }
-
   .barra__fondo {
-    background-color: rgba(0, 0, 0, 0.3137254902);
+    background-color: #00000050;
     width: 90%;
     height: 30px;
   }
-
   .barra__contenido {
     justify-items: center;
     height: 100%;
     height: 30px;
     background-color: #D11B35;
   }
-
   .barra__num {
     font-size: 1.1rem;
   }
-
   .programas__titulo {
     text-align: center;
     font-size: 2rem;
   }
-
   .habilidades__programas {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .caja__tarjetas {
     width: 90%;
     height: auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-
   .caja__individual {
     margin: 25px auto;
     padding-bottom: 1rem;
     width: 70%;
     height: auto;
   }
-
   .titulo__programa {
     font-size: 1.3rem;
     height: auto;
   }
-
   .bajada__programa {
     font-size: 1.2rem;
     height: auto;
   }
-
   .programa__logo {
     height: 70px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
