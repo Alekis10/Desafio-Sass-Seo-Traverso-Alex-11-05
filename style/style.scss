@@ -308,7 +308,7 @@ textarea {
     margin: 8px;
 }
 
-.textocontacto {
+.texto__contacto {
     margin: 0 auto;
     margin-top: 50px;
     padding: 8px;
@@ -316,14 +316,14 @@ textarea {
     width: 65%;
 }
 
-.textocontacto__parrafo{
+.texto__contacto__parrafo{
     text-align: justify;
     margin-top: 30px;
     height: 50px;
     font-size: 1.2rem;
 }
 
-.textocontacto__titulo{
+.texto__contacto__titulo{
     font-size: 2.2rem;
 }
 
@@ -352,7 +352,7 @@ select {
 
 .sobremi__texto {
     @include fontStyle(white,1.2rem);
-    @extend .textocontacto__parrafo;
+    @extend .texto__contacto__parrafo;
     text-align: left;
     margin: 30px 0 30px 0;
     height: auto;
@@ -1220,7 +1220,7 @@ footer {
 
     /* SECCION CONTACTO */
 
-    .textocontacto {
+    .texto__contacto {
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -1228,7 +1228,7 @@ footer {
         justify-content: center;
     }
     
-    .textocontacto__parrafo{
+    .texto__contacto__parrafo{
         height: auto;
         font-size: 1.1rem;
     }
@@ -1409,7 +1409,7 @@ footer {
 
     /* SECCION CONTACTO */
 
-    .textocontacto {
+    .texto__contacto {
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -1417,7 +1417,7 @@ footer {
         justify-content: center;
     }
     
-    .textocontacto__parrafo{
+    .texto__contacto__parrafo{
         height: auto;
         font-size: 1.1rem;
     }
