@@ -109,8 +109,6 @@ a {
   margin-left: 8rem;
   margin-top: 20vh;
   width: 600px;
-  color: #fff;
-  font-size: 3rem;
 }
 
 @-webkit-keyframes aparicion {
@@ -135,15 +133,10 @@ a {
   text-align: left;
 }
 
-.texto__saludo {
-  font-weight: 400;
-  font-size: 2.3rem;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 40%;
+h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .botoncontactame {
@@ -186,8 +179,9 @@ a {
 
 .proyectos__titulo {
   text-align: center;
-  font-size: 2rem;
   margin: 50px 0 40px 0;
+  color: white;
+  font-size: 2rem;
 }
 
 .contenedor__card {
@@ -220,13 +214,13 @@ a {
   font-size: 1rem;
 }
 
-.btn {
+.btn, .formulario__enviar {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
   color: #fff;
   border: 2px solid #D11B35 !important;
-  border-radius: 8px !important;
+  border-radius: 5px !important;
   background-color: #D11B35 !important;
   letter-spacing: 2px;
   padding: 10px;
@@ -234,7 +228,7 @@ a {
   transition: all 0.5s;
 }
 
-.btn:hover {
+.btn:hover, .formulario__enviar:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all 0.5s;
@@ -267,7 +261,7 @@ a {
   margin: 0 auto;
   margin-top: 5rem;
   margin-bottom: 2rem;
-  width: 50%;
+  width: 40%;
 }
 
 input {
@@ -280,8 +274,9 @@ textarea {
 
 .formulario__titulo {
   text-align: center;
-  font-size: 2rem;
   margin: 50px 0 40px 0;
+  color: white;
+  font-size: 2rem;
 }
 
 .formulario__nombre {
@@ -333,7 +328,6 @@ textarea {
   margin: 20px;
   background: #D11B35;
   width: 30%;
-  height: 40px;
   color: #fff;
   cursor: pointer;
 }
@@ -354,7 +348,7 @@ textarea {
   width: 65%;
 }
 
-.textocontacto__parrafo {
+.textocontacto__parrafo, .sobremi__texto {
   text-align: justify;
   margin-top: 30px;
   height: 50px;
@@ -377,25 +371,27 @@ select {
   width: 65%;
 }
 
-.sobremi .sobremi__titulo {
+.sobremi__titulo {
   margin-top: 30px;
+  color: white;
   font-size: 2rem;
 }
 
-.sobremi .sobremi__imagen {
-  height: 400px;
-  width: 400px;
-  margin-top: 20px;
+.sobremi__imagen {
+  height: 500px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.sobremi .sobremi__texto {
+.sobremi__texto {
+  color: white;
+  font-size: 1.2rem;
   text-align: left;
   margin: 30px 0 30px 0;
-  height: 200px;
-  font-size: 1.2rem;
+  height: auto;
 }
 
-.sobremi .sobremi__caracteristicas {
+.sobremi__caracteristicas {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,18 +411,19 @@ select {
   margin-bottom: 2.5rem;
 }
 
-.sobremi .card-cualidades {
+.card-cualidades {
   margin-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
-.sobremi .card-img-top-cualidades {
+.card-img-top-cualidades {
   margin: 0 auto;
   width: 80px;
 }
 
-.sobremi .card-text-cualidades {
+.card-text-cualidades {
+  color: white;
   font-size: 1.3rem;
   font-weight: 600;
   margin-top: 1.5rem;
@@ -442,6 +439,7 @@ select {
 .lenguajes__titulo {
   margin-bottom: 2.5rem;
   height: auto;
+  color: white;
   font-size: 2rem;
 }
 
@@ -467,8 +465,8 @@ select {
 }
 
 .titulo__leng {
+  color: white;
   font-size: 1.3rem;
-  font-weight: 600;
   margin: .8rem;
 }
 
@@ -510,7 +508,6 @@ select {
   height: 98%;
   border: 1px solid #D11B35;
   border-radius: 5px;
-  background-color: #D11B35;
 }
 
 .html {
@@ -537,6 +534,114 @@ select {
   width: 10%;
 }
 
+.barra__html {
+  background-color: #d01b36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.barra__css {
+  background-color: rgba(208, 27, 54, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.barra__javascript {
+  background-color: rgba(208, 27, 54, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.barra__php {
+  background-color: rgba(208, 27, 54, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.barra__python {
+  background-color: rgba(208, 27, 54, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.barra__node {
+  background-color: rgba(208, 27, 54, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  height: 100%;
+  color: white;
+  font-size: 1.2rem;
+}
+
 .barra__num {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,16 +652,20 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.2rem;
   letter-spacing: .1rem;
   font-weight: 600;
   background-color: #D11B35;
   height: 100%;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .programas__titulo {
   text-align: center;
+  color: white;
   font-size: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .programas__imagenes {
@@ -567,11 +676,6 @@ select {
 .habilidades__programas {
   margin-top: 5rem;
   width: 100%;
-}
-
-.programas__titulo {
-  margin-bottom: 2.5rem;
-  text-align: center;
 }
 
 .caja__tarjetas {
@@ -746,6 +850,22 @@ select {
   text-align: left;
 }
 
+.logo__wpp {
+  fill: #25D366;
+}
+
+.logo__ig {
+  fill: #a40a3d;
+}
+
+.logo__lk {
+  fill: #0077b5;
+}
+
+.logo__gh {
+  fill: #ffffff;
+}
+
 footer {
   position: absolute;
   font-size: 10pt;
@@ -768,7 +888,7 @@ footer .icono__footer {
   .card-body {
     height: auto;
   }
-  .btn {
+  .btn, .formulario__enviar {
     margin-top: .5rem;
     margin-bottom: .5rem;
   }
@@ -785,7 +905,7 @@ footer .icono__footer {
   .card-body {
     height: auto;
   }
-  .btn {
+  .btn, .formulario__enviar {
     margin-top: .5rem;
     margin-bottom: .5rem;
   }
@@ -889,20 +1009,20 @@ footer .icono__footer {
     margin: 0 auto;
     width: 65%;
   }
-  .sobremi .sobremi__titulo {
+  .sobremi__titulo {
     margin-top: 30px;
     font-size: 2rem;
   }
-  .sobremi .sobremi__imagen {
+  .sobremi__imagen {
     height: auto;
     width: auto;
     max-width: 100%;
     max-height: 100%;
   }
-  .sobremi .sobremi__texto {
+  .sobremi__texto {
     font-size: 1.1rem;
   }
-  .sobremi .sobremi__caracteristicas {
+  .sobremi__caracteristicas {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -910,16 +1030,16 @@ footer .icono__footer {
     width: 100%;
     height: auto;
   }
-  .sobremi .card-cualidades {
+  .card-cualidades {
     margin-top: 3rem;
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  .sobremi .card-img-top-cualidades {
+  .card-img-top-cualidades {
     margin: 0 auto;
     width: 80px;
   }
-  .sobremi .card-text-cualidades {
+  .card-text-cualidades {
     font-size: 1.2rem;
   }
   /* FORMULARIO */
@@ -1086,6 +1206,11 @@ footer .icono__footer {
     text-align: center;
     width: 100%;
   }
+  h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
   .texto__saludo {
     width: 70%;
     font-weight: 400;
@@ -1126,10 +1251,9 @@ footer .icono__footer {
     font-size: 2rem;
   }
   .sobremi .sobremi__imagen {
-    height: auto;
-    width: auto;
-    max-width: 100%;
+    max-width: 90%;
     max-height: 100%;
+    margin-bottom: 2rem;
   }
   .sobremi .sobremi__texto {
     margin: 0 auto;
@@ -1223,7 +1347,7 @@ footer .icono__footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .textocontacto__parrafo {
+  .textocontacto__parrafo, .sobremi__texto {
     height: auto;
     font-size: 1.1rem;
   }
@@ -1271,6 +1395,11 @@ footer .icono__footer {
   .texto__inicio {
     text-align: center;
     width: 100%;
+  }
+  h1 {
+    color: white;
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
   }
   .texto__saludo {
     width: 70%;
@@ -1403,7 +1532,7 @@ footer .icono__footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .textocontacto__parrafo {
+  .textocontacto__parrafo, .sobremi__texto {
     height: auto;
     font-size: 1.1rem;
   }
@@ -1422,6 +1551,7 @@ footer .icono__footer {
     width: auto;
     max-width: 100%;
     max-height: 100%;
+    margin-bottom: 2rem;
   }
   .sobremi .sobremi__texto {
     margin: 0 auto;

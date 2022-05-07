@@ -9,10 +9,17 @@ $color2: #141414;
 $color3: #D11B35;
 $color4: #fff;
 
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: $color4;
     background-color: $color1;
+}
+
+
+@mixin fontStyle ($color, $fontsize) {
+    color: $color;
+    font-size: $fontsize;
 }
 
 .contenedorgeneral {
@@ -95,8 +102,7 @@ a {
     margin-left: 8rem;
     margin-top: 20vh;
     width: 600px;
-    color: $color4;
-    font-size: 3rem;
+
 }
 
 @keyframes aparicion
@@ -109,14 +115,9 @@ a {
     text-align: left;
 }
 
-.texto__saludo{
-    font-weight: 400;
-    font-size: 2.3rem;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
+h1 {
+    @include fontStyle(white,3rem);
+    margin-bottom: 2rem;
 }
 
 .botoncontactame {
@@ -156,8 +157,8 @@ a {
 
 .proyectos__titulo {
     text-align: center;
-    font-size: 2rem;
     margin: 50px 0 40px 0;
+    @include fontStyle(white,2rem);
 }
 
 .contenedor__card {
@@ -193,7 +194,7 @@ a {
     font-weight: 600;
     color: $color4;
     border: 2px solid $color3 !important;
-    border-radius: 8px !important;
+    border-radius: 5px !important;
     background-color: $color3 !important;
     letter-spacing: 2px;
     padding: 10px;
@@ -228,7 +229,7 @@ a {
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 2rem;
-    width: 50%;
+    width: 40%;
 }
 
 input {
@@ -241,8 +242,8 @@ textarea {
 
 .formulario__titulo {
     text-align: center;
-    font-size: 2rem;
     margin: 50px 0 40px 0;
+    @include fontStyle(white,2rem);
 }
 
 .formulario__nombre {
@@ -290,13 +291,13 @@ font-size: 1.2rem;
 font-weight: 700;
 letter-spacing: 2px;
 border-radius: 6px;
-border: 1px solid #D11B35;
+border: 1px solid $color3;
 margin: 20px;
 background:  $color3;
 width: 30%;
-height: 40px;
 color: $color4;
 cursor: pointer;
+@extend .btn;
 }
 
 textarea {
@@ -336,24 +337,25 @@ select {
     text-align: center;
     margin: 0 auto;
     width: 65%;
-
+}
 
 .sobremi__titulo {
     margin-top: 30px;
-    font-size: 2rem;
+    @include fontStyle(white,2rem);
 }
 
 .sobremi__imagen{
-    height: 400px;
-    width: 400px;
-    margin-top: 20px;
+    height: 500px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .sobremi__texto {
+    @include fontStyle(white,1.2rem);
+    @extend .textocontacto__parrafo;
     text-align: left;
     margin: 30px 0 30px 0;
-    height: 200px;
-    font-size: 1.2rem;
+    height: auto;
 }
 
 .sobremi__caracteristicas {
@@ -379,11 +381,9 @@ select {
 }
 
 .card-text-cualidades {
-    font-size: 1.3rem;
+    @include fontStyle(white,1.3rem);
     font-weight: 600;
     margin-top: 1.5rem;
-}
-
 }
 
 .habilidades__lenguajes {
@@ -396,7 +396,7 @@ select {
 .lenguajes__titulo {
     margin-bottom: 2.5rem;
     height: auto;
-    font-size: 2rem;
+    @include fontStyle(white,2rem);
 }
 
 .lenguajes__cuadro {
@@ -412,8 +412,7 @@ select {
 }
 
 .titulo__leng{
-    font-size: 1.3rem;
-    font-weight: 600;
+    @include fontStyle(white,1.3rem);
     margin: .8rem;
 }
 
@@ -444,7 +443,6 @@ select {
     height: 98%;
     border: 1px solid $color3;
     border-radius: 5px;
-    background-color: $color3;
 }
 
 .html {
@@ -471,20 +469,43 @@ select {
     width: 10%;
 }
 
+$barra: (
+    html: hsla(351, 77%, 46%, 1),
+    css: hsla(351, 77%, 46%, 0.8),
+    javascript: hsla(351, 77%, 46%, 0.6),
+    php: hsla(351, 77%, 46%, 0.4),
+    python: hsla(351, 77%, 46%, 0.2),
+    node: hsla(351, 77%, 46%, 0.1),
+);
+
+@each $relleno, $color in $barra {
+    .barra__#{$relleno} {
+        background-color: $color;display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        height: 100%;
+        @include fontStyle(white,1.2rem);
+    }
+}
+
 .barra__num {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
     letter-spacing: .1rem;
     font-weight: 600;
     background-color: $color3;
     height: 100%;
+    @include fontStyle(white,1.2rem);
 }
 
 .programas__titulo{
     text-align: center;
-    font-size: 2rem;
+    @include fontStyle(white,2rem);
+    margin-bottom: 2.5rem;
+    text-align: center;
 }
 
 .programas__imagenes{
@@ -495,11 +516,6 @@ select {
 .habilidades__programas{
     margin-top: 5rem;
     width: 100%;
-}
-
-.programas__titulo {
-    margin-bottom: 2.5rem;
-    text-align: center;
 }
 
 .caja__tarjetas {
@@ -649,6 +665,19 @@ select {
     width: 100%;
     font-size: 1.1rem;
     text-align: left;
+}
+
+$redes: (
+    wpp: #25D366,
+    ig: #a40a3d,
+    lk: #0077b5,
+    gh: #ffffff,
+);
+
+@each $red, $color in $redes {
+    .logo__#{$red} {
+        fill: $color;
+    }
 }
 
 footer {
@@ -831,7 +860,7 @@ footer {
         text-align: center;
         margin: 0 auto;
         width: 65%;
-    
+    }
     
     .sobremi__titulo {
         margin-top: 30px;
@@ -872,7 +901,6 @@ footer {
         font-size: 1.2rem;
     }    
     
-    }
 
     /* FORMULARIO */
 
@@ -1047,6 +1075,11 @@ footer {
         text-align: center;
         width: 100%;
     }
+
+    h1 {
+        @include fontStyle(white,2.5rem);
+        margin-bottom: 1.5rem;
+    }
     
     .texto__saludo{
         width: 70%;
@@ -1098,10 +1131,9 @@ footer {
     }
 
     .sobremi__imagen{
-        height: auto;
-        width: auto;
-        max-width: 100%;
+        max-width: 90%;
         max-height: 100%;
+        margin-bottom: 2rem;
     }
     
     .sobremi__texto {
@@ -1251,6 +1283,11 @@ footer {
     .texto__inicio{
         text-align: center;
         width: 100%;
+    }
+
+    h1 {
+        @include fontStyle(white,2.7rem);
+        margin-bottom: 2rem;
     }
     
     .texto__saludo{
@@ -1404,6 +1441,7 @@ footer {
         width: auto;
         max-width: 100%;
         max-height: 100%;
+        margin-bottom: 2rem;
     }
     
     .sobremi__texto {
