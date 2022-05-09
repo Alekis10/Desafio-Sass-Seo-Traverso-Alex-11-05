@@ -264,12 +264,16 @@ h1 {
   width: 40%;
 }
 
-input {
+input, textarea {
   font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  width: 400px;
+  border: none;
+  padding: 5px;
+  margin: 8px;
 }
 
 .formulario__titulo {
@@ -279,20 +283,7 @@ textarea {
   font-size: 2rem;
 }
 
-.formulario__nombre {
-  color: #fff;
-  font-size: 16px;
-  width: 90%;
-  height: 30px;
-  border: 0;
-  padding: 5px;
-  margin: 8px;
-  background: transparent;
-  border-bottom: 1px solid #D11B35;
-  outline: none;
-}
-
-.formulario__mail {
+.formulario__nombre, .formulario__mail, .formulario__mensaje {
   color: #fff;
   font-size: 16px;
   width: 90%;
@@ -306,16 +297,7 @@ textarea {
 }
 
 .formulario__mensaje {
-  color: #fff;
-  font-size: 16px;
-  width: 90%;
   height: 100px;
-  border: 0;
-  padding: 5px;
-  margin: 8px;
-  background: transparent;
-  border-bottom: 1px solid #D11B35;
-  outline: none;
 }
 
 .formulario__enviar {
@@ -330,14 +312,6 @@ textarea {
   width: 30%;
   color: #fff;
   cursor: pointer;
-}
-
-textarea {
-  font-size: 1rem;
-  width: 400px;
-  border: none;
-  padding: 5px;
-  margin: 8px;
 }
 
 .texto__contacto {
