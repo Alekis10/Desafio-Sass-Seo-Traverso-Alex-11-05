@@ -1256,6 +1256,11 @@ footer .texto__footer {
     height: auto;
     margin-bottom: 10px;
   }
+  .btn, .formulario__enviar {
+    font-size: 1rem;
+    width: 120px;
+    padding: 3px;
+  }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1512,6 +1517,136 @@ footer .texto__footer {
   }
   .programa__logo {
     height: 70px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .logo {
+    margin-top: 1.7rem;
+    height: 50px;
+    width: auto;
+    z-index: 1;
+  }
+  .navbar-nav {
+    margin-left: 15px !important;
+  }
+  .navbar-collapse {
+    margin-top: 1.5rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+    color: #fff !important;
+    width: 25%;
+    margin-top: .5rem;
+    padding: .5rem;
+  }
+  /* SECCION INDEX */
+  .card {
+    width: 90%;
+  }
+  .texto__inicio {
+    width: 100%;
+  }
+  h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .formulario {
+    width: 80%;
+  }
+  .botoncontactame {
+    font-size: 1.3rem;
+  }
+  /* SECCION PROYECTOS */
+  .proyectos__titulo {
+    font-size: 1.6rem;
+  }
+  .bajada__proyecto {
+    font-size: 0.9rem;
+  }
+  .bajada__proyecto__left {
+    font-size: 0.9rem;
+  }
+  /* SECCION CONTACTO */
+  .texto__contacto__parrafo, .sobremi__texto {
+    height: auto;
+    font-size: 1rem;
+  }
+  .texto__contacto__titulo {
+    font-size: 1.6rem;
+  }
+  /* SECCION SOBRE MI */
+  .sobremi {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .sobremi .sobremi__titulo {
+    font-size: 1.6rem;
+  }
+  .sobremi .sobremi__imagen {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 2rem;
+  }
+  .sobremi .sobremi__texto {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  .sobremi .sobremi__caracteristicas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+  }
+  .sobremi .card-text-cualidades {
+    font-size: 1.1rem;
+  }
+  .sobremi .card-img-top-cualidades {
+    height: 80px;
+    width: auto;
+  }
+  .sobremi .card-cualidades {
+    padding: 0;
+  }
+  /* SECCION HABILIDADES */
+  .lenguajes__titulo {
+    font-size: 1.6rem;
+  }
+  .titulo__leng {
+    font-size: 1.2rem;
+  }
+  .barra__caja {
+    width: 80%;
+  }
+  .barra__fondo {
+    height: 20px;
+  }
+  .barra__contenido {
+    height: 20px;
+    font-size: 0.9rem;
+  }
+  .programas__titulo {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .titulo__programa {
+    font-size: 1.1rem;
+    height: auto;
+  }
+  .bajada__programa {
+    font-size: 0.9rem;
+  }
+  .programa__logo {
+    height: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
