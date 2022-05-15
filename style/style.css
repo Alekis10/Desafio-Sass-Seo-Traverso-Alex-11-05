@@ -60,7 +60,7 @@ body {
           transform: scale(1.2);
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  color: #E83E5E !important;
+  color: #C42847 !important;
 }
 
 #main-header {
@@ -147,8 +147,8 @@ h1 {
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: 600;
-  border: 2px solid #E83E5E;
-  background-color: #E83E5E;
+  border: 2px solid #C42847;
+  background-color: #C42847;
   border-radius: 8px;
   letter-spacing: 2px;
   padding: 10px;
@@ -224,7 +224,7 @@ h1 {
   font-weight: 600;
   color: #fff;
   border-radius: 5px;
-  background-color: #E83E5E;
+  background-color: #C42847;
   letter-spacing: 2px;
   padding: 10px;
   -webkit-transition: all 0.5s;
@@ -295,7 +295,7 @@ textarea {
   padding: 5px;
   margin: 8px;
   background: transparent;
-  border-bottom: 1px solid #E83E5E;
+  border-bottom: 1px solid #C42847;
   outline: none;
 }
 
@@ -309,9 +309,9 @@ textarea {
   font-weight: 700;
   letter-spacing: 2px;
   border-radius: 6px;
-  border: 1px solid #E83E5E;
+  border: 1px solid #C42847;
   margin: 20px;
-  background: #E83E5E;
+  background: #C42847;
   width: 120px;
   color: #fff;
   cursor: pointer;
@@ -473,7 +473,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 15px;
-  outline: #E83E5E 2px solid;
+  outline: #C42847 2px solid;
   background-color: #00000050;
   width: 90%;
   height: 30px;
@@ -504,7 +504,7 @@ select {
 }
 
 .barra__contenido {
-  background-color: #E83E5E;
+  background-color: #C42847;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -531,7 +531,7 @@ select {
           justify-content: center;
   letter-spacing: .1rem;
   font-weight: 600;
-  background-color: #E83E5E;
+  background-color: #C42847;
   height: 100%;
   color: white;
   font-size: 1.2rem;
@@ -571,7 +571,7 @@ select {
   margin: 25px auto;
   width: 300px;
   height: 250px;
-  border: 2px solid #E83E5E;
+  border: 2px solid #C42847;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -618,7 +618,7 @@ select {
   height: 400px;
   overflow: hidden;
   border-radius: 5px !important;
-  border: 1px solid #E83E5E;
+  border: 1px solid #C42847;
   background-color: #141414;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -1159,7 +1159,7 @@ footer .texto__footer {
   .barra__contenido {
     justify-items: center;
     height: 25px;
-    background-color: #E83E5E;
+    background-color: #C42847;
   }
   .barra__num {
     font-size: 1.1rem;
@@ -1468,7 +1468,7 @@ footer .texto__footer {
     justify-items: center;
     height: 100%;
     height: 30px;
-    background-color: #E83E5E;
+    background-color: #C42847;
   }
   .barra__num {
     font-size: 1.1rem;
