@@ -1296,6 +1296,9 @@ footer .texto__footer {
   .formulario {
     width: 90%;
   }
+  .formulario__enviar {
+    width: auto;
+  }
   .botoncontactame {
     margin-top: 70px;
     top: 55%;
