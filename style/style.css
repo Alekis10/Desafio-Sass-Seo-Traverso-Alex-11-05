@@ -246,8 +246,8 @@ h1 {
 }
 
 .card-img-top:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -257,6 +257,88 @@ h1 {
   width: 100%;
   background-color: #141414;
   overflow: hidden;
+}
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.light-box img {
+  width: 60vw;
+  max-height: 70vw;
+}
+
+.light-box:target {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.cruz {
+  display: block;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 40px;
+  right: 45px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: #C42847;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cruz:hover {
+  color: #fff;
+  color: #fff;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.next, .previous, .previous:hover {
+  margin-left: 20px;
+  display: block;
+  background-color: #C42847;
+  font-size: 1.5rem;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.previous {
+  margin-right: 20px;
+}
+
+.next:hover, .previous:hover {
+  color: #fff;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 .formulario {
@@ -625,54 +707,25 @@ select {
 }
 
 .contenedor__imagen__trabajo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-  height: 360px;
 }
 
 .contenedor__imagen__trabajo__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
-  height: 360px;
-}
-
-.trabajo_1 {
-  background-image: url(../images/infografia.jpg);
-  background-position: 50% 20%;
-  background-size: cover;
-}
-
-.trabajo_2 {
-  background-image: url(../images/monograma.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.trabajo_3 {
-  background-image: url(../images/poster.jpg);
-  background-position: 50% 20%;
-  background-size: cover;
-}
-
-.trabajo_4 {
-  background-image: url(../images/render.jpg);
-  background-position: 50% 40%;
-  background-size: cover;
 }
 
 .w-100 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90% !important;
-  height: 90%;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 15px;
@@ -704,8 +757,17 @@ select {
 }
 
 .w-100-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90% !important;
-  height: 90%;
+  height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 40px;
@@ -1062,6 +1124,34 @@ footer .texto__footer {
   .card-img {
     height: auto;
   }
+  .light-box img {
+    width: 75%;
+  }
+  .cruz {
+    font-size: 1.2rem;
+    top: 50px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+  }
+  .next, .previous, .previous:hover {
+    position: absolute;
+    top: 80%;
+    right: 43%;
+    margin-left: 15px;
+    font-size: 1.4rem;
+    height: 30px;
+    width: 30px;
+  }
+  .previous {
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    margin-left: 15px;
+    font-size: 1.4rem;
+    height: 30px;
+    width: 30px;
+  }
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1260,6 +1350,34 @@ footer .texto__footer {
     font-size: 1rem;
     width: 120px;
     padding: 3px;
+  }
+  .light-box img {
+    width: 80%;
+  }
+  .cruz {
+    font-size: 1.2rem;
+    top: 50px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+  }
+  .next, .previous, .previous:hover {
+    position: absolute;
+    top: 82%;
+    right: 41%;
+    margin-left: 15px;
+    font-size: 1.3rem;
+    height: 30px;
+    width: 30px;
+  }
+  .previous {
+    position: absolute;
+    top: 82%;
+    left: 41%;
+    margin-left: 15px;
+    font-size: 1.3rem;
+    height: 30px;
+    width: 30px;
   }
   .container {
     display: -webkit-box;
@@ -1520,6 +1638,26 @@ footer .texto__footer {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .light-box img {
+    max-width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cruz {
+    top: 60px;
+    right: 30px;
+  }
+  .next, .previous, .previous:hover {
+    top: 75%;
+    right: 38%;
+  }
+  .previous {
+    top: 75%;
+    left: 38%;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .logo {
     margin-top: 1.7rem;
@@ -1551,6 +1689,23 @@ footer .texto__footer {
     color: white;
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+  .light-box img {
+    max-width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cruz {
+    top: 60px;
+    right: 30px;
+  }
+  .next, .previous, .previous:hover {
+    top: 65%;
+    right: 35%;
+  }
+  .previous {
+    top: 65%;
+    left: 35%;
   }
   .formulario {
     width: 80%;

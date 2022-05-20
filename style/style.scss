@@ -213,7 +213,7 @@ h1 {
 }
 
 .card-img-top:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all 0.5s;
 }
 
@@ -222,6 +222,78 @@ h1 {
     width: 100%;
     background-color: $color2;
     overflow: hidden;
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: scale(0);
+}
+
+.light-box img {
+    width: 60vw;
+    max-height: 70vw;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.cruz {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    top: 40px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: #C42847;
+    transition: all 0.5s;
+}
+
+.cruz:hover {
+    color: $color4;
+    color: $color4;
+    transform: scale(1.09);
+}
+
+.next {
+    margin-left: 20px;
+    display: block;
+    background-color: #C42847;
+    font-size: 1.5rem;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.previous {
+    @extend .next;
+    margin-right: 20px;
+}
+
+.next:hover {
+    color: $color4;
+    transform: scale(1.09);
+}
+
+.previous:hover {
+    @extend .next;
 }
 
 .formulario {
@@ -537,46 +609,19 @@ select {
 }
 
 .contenedor__imagen__trabajo {
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 360px;
 }
 
 .contenedor__imagen__trabajo__left {
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 360px;
-}
-
-.trabajo_1 {
-    background-image: url(../images/infografia.jpg);
-    background-position: 50% 20%;
-    background-size: cover;
-}
-
-.trabajo_2 {
-    background-image: url(../images/monograma.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.trabajo_3 {
-    background-image: url(../images/poster.jpg);
-    background-position: 50% 20%;
-    background-size: cover;
-}
-
-.trabajo_4 {
-    background-image: url(../images/render.jpg);
-    background-position: 50% 40%;
-    background-size: cover;
 }
 
 .w-100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90% !important;
-    height: 90%;
+    height: 350px;
     object-fit: cover;
     margin-left: 15px;
 }
@@ -602,8 +647,11 @@ select {
 }
 
 .w-100-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90% !important;
-    height: 90%;
+    height: 350px;
     object-fit: cover;
     margin-left: 40px;
 }
@@ -1017,6 +1065,37 @@ footer {
         height: auto;
     }
     
+    .light-box img {
+        width: 75%;
+    }
+    
+    .cruz {
+        font-size: 1.2rem;
+        top: 50px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .next {
+        position: absolute;
+        top: 80%;
+        right: 43%;
+        margin-left: 15px;
+        font-size: 1.4rem;
+        height: 30px;
+        width: 30px;
+    }
+
+    .previous {
+        position: absolute;
+        top: 80%;
+        left: 43%;
+        margin-left: 15px;
+        font-size: 1.4rem;
+        height: 30px;
+        width: 30px;
+    }
 
 .container {
     display: flex;
@@ -1237,6 +1316,37 @@ footer {
         padding: 3px;
     }
     
+    .light-box img {
+        width: 80%;
+    }
+    
+    .cruz {
+        font-size: 1.2rem;
+        top: 50px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .next {
+        position: absolute;
+        top: 82%;
+        right: 41%;
+        margin-left: 15px;
+        font-size: 1.3rem;
+        height: 30px;
+        width: 30px;
+    }
+
+    .previous {
+        position: absolute;
+        top: 82%;
+        left: 41%;
+        margin-left: 15px;
+        font-size: 1.3rem;
+        height: 30px;
+        width: 30px;
+    }
 
 .container {
     display: flex;
@@ -1505,6 +1615,30 @@ footer {
 
 }
 
+@media only screen and (max-width: 425px) {
+
+.light-box img {
+    max-width: 90%;
+    object-fit: cover;
+}
+
+.cruz {
+    top: 60px;
+    right: 30px;
+}
+
+.next {
+    top: 75%;
+    right: 38%;
+}
+
+.previous {
+    top: 75%;
+    left: 38%;
+}
+}
+
+
 @media only screen and (max-width: 320px) {
 
     .logo {
@@ -1543,6 +1677,26 @@ footer {
     h1 {
         @include fontStyle(white,2rem);
         margin-bottom: 2rem;
+    }
+
+    .light-box img {
+        max-width: 90%;
+        object-fit: cover;
+    }
+    
+    .cruz {
+        top: 60px;
+        right: 30px;
+    }
+    
+    .next {
+        top: 65%;
+        right: 35%;
+    }
+    
+    .previous {
+        top: 65%;
+        left: 35%;
     }
     
     .formulario {
