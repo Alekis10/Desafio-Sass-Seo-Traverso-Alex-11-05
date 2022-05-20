@@ -363,7 +363,7 @@ cursor: pointer;
 }
 
 .texto__contacto__parrafo{
-    text-align: justify;
+    text-align: left;
     margin-top: 30px;
     height: 50px;
     font-size: 1.2rem;
@@ -1550,7 +1550,6 @@ footer {
     }
 }
     
-    
     /* SECCION HABILIDADES */
     
     .barra__caja {
@@ -1641,6 +1640,22 @@ footer {
     width: 110px;
     height: 40px;
 }
+}
+
+@media only screen and (max-width: 375px) { 
+
+    h1 {
+        @include fontStyle(white,2.4rem);
+    }
+
+    .texto__inicio {
+        font-size: 1rem;
+        color: #141414;
+    }
+
+    .container {
+        margin-top: 10vh;
+    }
 
 }
 
@@ -1675,9 +1690,13 @@ footer {
         width: 90%;
     }
 
+    h1 {
+        @include fontStyle(white,2rem);
+        margin-bottom: 2rem;
+    }
+
     .texto__inicio{
         width: 100%;
-        font-size: 2.5rem;
     }
 
     .container {

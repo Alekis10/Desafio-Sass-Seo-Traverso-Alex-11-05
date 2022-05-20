@@ -408,7 +408,7 @@ textarea {
 }
 
 .texto__contacto__parrafo, .sobremi__texto {
-  text-align: justify;
+  text-align: left;
   margin-top: 30px;
   height: 50px;
   font-size: 1.2rem;
@@ -1662,6 +1662,20 @@ footer .texto__footer {
   }
 }
 
+@media only screen and (max-width: 375px) {
+  h1 {
+    color: white;
+    font-size: 2.4rem;
+  }
+  .texto__inicio {
+    font-size: 1rem;
+    color: #141414;
+  }
+  .container {
+    margin-top: 10vh;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .logo {
     margin-top: 1.7rem;
@@ -1686,9 +1700,13 @@ footer .texto__footer {
   .card {
     width: 90%;
   }
+  h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
   .texto__inicio {
     width: 100%;
-    font-size: 2.5rem;
   }
   .container {
     margin-top: 20vh;
