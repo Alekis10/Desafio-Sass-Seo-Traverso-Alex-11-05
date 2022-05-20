@@ -143,7 +143,7 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.botoncontactame {
+.boton__contactame {
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: 600;
@@ -157,7 +157,7 @@ h1 {
   transition: all 0.5s;
 }
 
-.botoncontactame:hover {
+.boton__contactame:hover {
   font-size: 1.8rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1192,7 +1192,7 @@ footer .texto__footer {
   .formulario {
     width: 80%;
   }
-  .botoncontactame {
+  .boton__contactame {
     margin-top: 70px;
     top: 55%;
   }
@@ -1422,7 +1422,7 @@ footer .texto__footer {
   .formulario__enviar {
     width: auto;
   }
-  .botoncontactame {
+  .boton__contactame {
     margin-top: 70px;
     top: 55%;
   }
@@ -1688,6 +1688,11 @@ footer .texto__footer {
   }
   .texto__inicio {
     width: 100%;
+    font-size: 2.5rem;
+  }
+  .container {
+    margin-top: 20vh;
+    width: 100%;
   }
   h1 {
     color: white;
@@ -1718,7 +1723,7 @@ footer .texto__footer {
     width: 100px;
     height: 35px;
   }
-  .botoncontactame {
+  .boton__contactame {
     font-size: 1.3rem;
   }
   /* SECCION PROYECTOS */

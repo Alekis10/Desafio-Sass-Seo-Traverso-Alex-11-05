@@ -121,7 +121,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.botoncontactame {
+.boton__contactame {
     text-decoration: none;
     font-size: 1.7rem;
     font-weight: 600;
@@ -134,7 +134,7 @@ h1 {
     transition: all 0.5s;
 }
 
-.botoncontactame:hover {
+.boton__contactame:hover {
     font-size: 1.8rem;
     transition: all 0.5s;
     font-weight: 700;
@@ -1135,7 +1135,7 @@ footer {
         width: 80%;
     }
 
-    .botoncontactame{
+    .boton__contactame{
         margin-top: 70px;
         top: 55%;
     }
@@ -1390,7 +1390,7 @@ footer {
         width: auto;
     }
 
-    .botoncontactame{
+    .boton__contactame{
         margin-top: 70px;
         top: 55%;
     }
@@ -1677,6 +1677,12 @@ footer {
 
     .texto__inicio{
         width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin-top: 20vh;
+        width: 100%;
     }
 
     h1 {
@@ -1713,7 +1719,7 @@ footer {
         height: 35px;
     }
 
-    .botoncontactame{
+    .boton__contactame{
         font-size: 1.3rem;
     }
     
